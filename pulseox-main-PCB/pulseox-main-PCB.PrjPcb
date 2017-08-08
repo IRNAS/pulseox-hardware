@@ -144,21 +144,93 @@ DocumentUniqueId=
 DocumentPath=Project Outputs for pulseox-main-PCB\Design Rule Check - pulseox-main-PCB.html
 DItemRevisionGUID=
 
+[GeneratedDocument2]
+DocumentPath=Project Outputs for pulseox-main-PCB\NC Drill\pulseox-main-PCB.DRL
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for pulseox-main-PCB\NC Drill\pulseox-main-PCB.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.GM29
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for pulseox-main-PCB\NC Drill\pulseox-main-PCB.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.REP
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for pulseox-main-PCB\Gerber\pulseox-main-PCB.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for pulseox-main-PCB\NC Drill\pulseox-main-PCB.TXT
+DItemRevisionGUID=
+
 [Parameter1]
-Name=Company
-Value=Irnas
+Name=Website
+Value=www.irnas.eu
 
 [Parameter2]
-Name=ProjectTitle
-Value=GliaX - pulseox
-
-[Parameter3]
 Name=Version
 Value=v2.0
 
+[Parameter3]
+Name=ProjectTitle
+Value=GliaX - pulseox
+
 [Parameter4]
-Name=Website
-Value=www.irnas.eu
+Name=Company
+Value=Irnas
 
 [Configuration1]
 Name=Default Configuration
