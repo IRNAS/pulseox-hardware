@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [pulseox-clamp-PCB.PcbDoc]
+   Generated File[pulseox-clamp-PCB.TXT]
+   Generated File[pulseox-clamp-PCB.DRL]
+   Generated File[pulseox-clamp-PCB.LDP]
+   Generated File[pulseox-clamp-PCB.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 8:20:38 PM On 08/10/2017
