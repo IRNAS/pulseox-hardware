@@ -28,5 +28,5 @@ Once the PCB soldering is complete, the UTP connector must be soldered on to the
 |4|Blue|LED| LED 1 |
 |5|White-Blue|RECEIVER| RCV |
 |6|Green|RECEIVER| 3V3 |
-|7|White-Braun|RECEIVER| GND |
-|8|Braun|---|---|
+|7|White-Brown|RECEIVER| GND |
+|8|Brown|---|---|
