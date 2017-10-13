@@ -8,6 +8,8 @@
 ## 1 Overview and Toolset <a id="OVER"></a>
 Here you can find manufacturing and assembly details for a single Pulse Oximeter device. Download all the files for 3D printing from the build_files folder
 
+<img src="https://user-images.githubusercontent.com/14543226/31544259-31640a3e-b01a-11e7-83d4-df441b65fae5.jpg" alt="step5a" width= "300" >
+
 ### 1.1 General
 - Manufacturing time:
   - 3D printing - 6h
@@ -31,6 +33,8 @@ Here you can find manufacturing and assembly details for a single Pulse Oximeter
 - Battery Hand Drill
 
 ### 1.4 Parts list
+
+All parts can be found in build_files folder.
 
 Finger clamp:
 - finger_clamp (.STL)(.STEP)
@@ -89,15 +93,13 @@ Collect the necessary parts: 3D printed parts, PCB, screws.
 |Plug in the battery and place the battery next to the spacer.|<img src="https://user-images.githubusercontent.com/14543226/31543723-c80e2f62-b017-11e7-8382-5470ac710bdb.jpg" alt="step6a" width= "300" >|<img src="https://user-images.githubusercontent.com/14543226/31543721-c7ee550c-b017-11e7-834f-0d1b5eeca64b.jpg" alt="step6b" width= "300" >|
 |Put on the case_top and screw in the four M3x14mm screws|<img src="https://user-images.githubusercontent.com/14543226/31543752-ec4fd6c8-b017-11e7-9997-2d589a24a2d6.jpg" alt="step7a" width= "300" >|<img src="https://user-images.githubusercontent.com/14543226/31543745-e1c9fcce-b017-11e7-8064-850378420036.jpg" alt="step7b" width= "300" >|
 
-**Final steps**
-
 Plug it the UTP cable from the finger clamp into the connector on the case to finish the assembly.
 
-Turn on the pulse oximeter and check whether you can see any light through the narrow
-slip between the finger LED cover and the finger clip. If yes, tighten the screws until
-you can no longer see light passing through.
+|<img src="https://user-images.githubusercontent.com/14543226/31543752-ec4fd6c8-b017-11e7-9997-2d589a24a2d6.jpg" alt="step8a" width= "300" >|<img src="https://user-images.githubusercontent.com/14543226/31544308-74150b94-b01a-11e7-8d57-62f8fc99e2ef.jpg" alt="step8b" width= "300" >|
+Turn on the pulse oximeter and check whether you can see any light through the narrow slip between the finger LED cover and the finger clip. If yes, tighten the screws until you can no longer see light passing through. Be aware not to tighten the screws too much - you can destroy threads in the plastic. Moreover, UTP wires must be handled with care since they are very prone to tearing.
 
-## 4. List of most likely failures
+**TESTING**
 
-- Tightening screws too much – destroying threads in plastic
-- UTP wires must be handled with care since they are very prone to tearing
+<img src="https://user-images.githubusercontent.com/14543226/31544384-d7fff5f6-b01a-11e7-8ba9-64b61a96d534.jpg" alt="step8b" width= "300" >
+
+CONGRATULATIONS! You've assembled your GliaX pulse oximeter. To test if your device works as it should see test_procedure folder.
