@@ -136,5 +136,11 @@ item = True
 peaks = np.where(peaks == item)
 peaks = peaks[0]
 
-
+"""
+PLOTTING - uncomment and change as necessary
+"""
+#plt.figure(1)
+#plt.plot(time, dc_ir)
+#plt.plot(time, dc_ir_ftd,'r')
+#plt.plot(time[peaks], dc_ir_ftd[peaks],'go')
 
