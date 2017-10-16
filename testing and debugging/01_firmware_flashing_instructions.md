@@ -1,4 +1,4 @@
-Here are the files and instructions for you to test your pulse oximeter. 
+Here are the instructions for you to test your pulse oximeter. All the files can be found in [this](https://github.com/IRNAS/pulseox-hardware/tree/v2.x/testing%20and%20debugging/firmware_test_debug) folder.
 
 # FLASHING THE FIRMWARE <a id="fw_flash"></a>
 
