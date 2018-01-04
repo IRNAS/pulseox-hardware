@@ -18,15 +18,15 @@ Once the PCB soldering is complete, the UTP connector must be soldered on to the
 
 
 
-<img src="https://user-images.githubusercontent.com/14543226/31539734-d10c0552-b009-11e7-908b-ec725e3c19e3.jpg" alt="pin_ass" width= "300" ><img src="https://user-images.githubusercontent.com/14543226/31540587-5e35dafa-b00c-11e7-9b91-bcf98a9ea191.PNG" alt="pin_ass" width= "200" ><img src="https://user-images.githubusercontent.com/14543226/31540550-418cea2e-b00c-11e7-81f8-03a08ccfe899.PNG" alt="pin_ass" width= "200" >
+<img src="https://user-images.githubusercontent.com/14543226/31540587-5e35dafa-b00c-11e7-9b91-bcf98a9ea191.PNG" alt="pin_ass" width= "200" ><img src="https://user-images.githubusercontent.com/14543226/31540550-418cea2e-b00c-11e7-81f8-03a08ccfe899.PNG" alt="pin_ass" width= "200" >
 
-| UTP CON PIN | WIRE COLOUR | PCB | PCB PIN |
+| UTP CON PIN | PCB | PCB PIN |
 |------|-------|-------|-------|
-|1|White-Orange|---|---|
-|2|Orange|LED| LED 3 |
-|3|White-Green|LED| LED 2 |
-|4|Blue|LED| LED 1 |
-|5|White-Blue|RECEIVER| RCV |
-|6|Green|RECEIVER| 3V3 |
-|7|White-Brown|RECEIVER| GND |
-|8|Brown|---|---|
+|1|---|---|
+|2|LED| LED 3 |
+|3|LED| LED 2 |
+|4|LED| LED 1 |
+|5|RECEIVER| RCV |
+|6|RECEIVER| 3V3 |
+|7|RECEIVER| GND |
+|8|---|---|
