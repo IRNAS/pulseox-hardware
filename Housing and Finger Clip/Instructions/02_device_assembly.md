@@ -12,7 +12,7 @@ Here you can find manufacturing and assembly details for a single Pulse Oximeter
 
 ### 1.1 General
 - Manufacturing time:
-  - 3D printing - 6h
+  - 3D printing - 1h
   - soldering (1 unit by hand, depends on the skills) - 2h
 - Assembly time: 10min
 
@@ -37,14 +37,13 @@ Here you can find manufacturing and assembly details for a single Pulse Oximeter
 All parts can be found in build_files folder.
 
 Finger clamp:
-- finger_clamp (.STL)(.STEP)
-- top_cover (.STL)(.STEP)
-- bottom_cover (.STL)(.STEP)
+- probe_in.STL
+- probe_out.STL
 
 Case:
-- case_bottom (.STL)(.STEP)
-- case_top (.STL)(.STEP)
-- spacer (.STL)(.STEP)
+- case_bottom.STL
+- case_top.STL
+- spacer.STL
 
 
 ## 2 Part Manufacturing <a id="MANUFACTURING"></a>
@@ -65,16 +64,14 @@ Case:
 
 **Finger clip**
 
-Collect the necessary parts: 3D printed parts, soldered finger clip kit, screws.
+Collect the necessary parts: 3D printed parts, soldered finger clip kit
 
 <img src="https://user-images.githubusercontent.com/14543226/31542108-0d6c389e-b011-11e7-92fb-b08a54904dde.jpg" alt="step2b" width= "300" >
 
-| DESCRIPTION | STEP 1 | STEP 2 |
-|------|-------|-------|
-|Insert two M3x5mm screws into the top cover holes, place the PCB with the sensor on top of the top cover so the screws go through the holes on the PCB and the cables are all hidden behind the PCB|<img src="https://user-images.githubusercontent.com/14543226/31542507-96ce28d0-b012-11e7-9367-3b5a16d2859a.jpg" alt="step3a" width= "300" >|<img src="https://user-images.githubusercontent.com/14543226/31542513-a2e1c28a-b012-11e7-8933-6371fc235b17.jpg" alt="step3b" width= "300" >|
-|Repeat the process for the bottom cover and PCB with the LEDs |<img src="https://user-images.githubusercontent.com/14543226/31542531-b52a79f0-b012-11e7-9142-d321f8b742c9.jpg" alt="step4a" width= "300" >|<img src="https://user-images.githubusercontent.com/14543226/31542549-c2f20170-b012-11e7-8382-a5f48253a1d6.jpg" alt="step4b" width= "300" >|
-|Place the top cover on the side of the finger clip with the UTP cable cutout and fasten the two screws. If you can still move the cable once the screws are fastened, dismount the top cover and use hot glue to fill the space in the cable slot.|<img src="https://user-images.githubusercontent.com/14543226/31542581-da321aaa-b012-11e7-9d7d-116cc3bf753b.jpg" alt="step5a" width= "300" >|<img src="https://user-images.githubusercontent.com/14543226/31542592-e652f64c-b012-11e7-901b-1c3354297761.jpg" alt="step5b" width= "300" >|
-|Place the bottom cover on the opposite side of the finger clamp and fasten the two screws|<img src="https://user-images.githubusercontent.com/14543226/31542603-f3700b4e-b012-11e7-8eed-d3aef9ecface.jpg" alt="step6a" width= "300" >|<img src="https://user-images.githubusercontent.com/14543226/31542604-f39215ea-b012-11e7-96c3-1156393d6faa.jpg" alt="step6b" width= "300" >|
+| DESCRIPTION | STEP |
+|------|------|
+
+
 
 **Case**
 
