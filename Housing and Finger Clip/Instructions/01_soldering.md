@@ -21,7 +21,7 @@ Once the PCB soldering is complete, the UTP connector must be soldered on to the
 <img src="https://user-images.githubusercontent.com/14543226/31540587-5e35dafa-b00c-11e7-9b91-bcf98a9ea191.PNG" alt="pin_ass" width= "200" ><img src="https://user-images.githubusercontent.com/14543226/31540550-418cea2e-b00c-11e7-81f8-03a08ccfe899.PNG" alt="pin_ass" width= "200" >
 
 | UTP CON PIN | PCB | PCB PIN |
-|------|-------|-------|-------|
+|------|-------|-------|
 |1|---|---|
 |2|LED| LED 3 |
 |3|LED| LED 2 |
