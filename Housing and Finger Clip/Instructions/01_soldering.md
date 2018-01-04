@@ -1,5 +1,5 @@
 # Soldering
-Once the PCB soldering is complete, the UTP connector must be soldered on to the pins on the main PCB using short wires (the new version will have the UTP connector included on he PCB). For the wire use <b>  CAT 6 flat UTP wire </b> and cut it. Peel the wire insulation off on the cut side so the wires are ready for soldering.
+Once the PCB soldering is complete, the UTP connector must be soldered on to the pins on the main PCB using short wires (the new version will have the UTP connector included on he PCB). For the wire use <b> flat 6-way lead </b>. On one side, crimp on a UTP connector (use middle 6 pins). Peel the wire insulation off on the other side so the wires are ready for soldering.
 
 
 
