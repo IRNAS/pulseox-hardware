@@ -8,8 +8,6 @@
 ## 1 Overview and Toolset <a id="OVER"></a>
 Here you can find manufacturing and assembly details for a single Pulse Oximeter device. Download all the files for 3D printing from the build_files folder
 
-<img src="https://user-images.githubusercontent.com/14543226/31544259-31640a3e-b01a-11e7-83d4-df441b65fae5.jpg" alt="step5a" width= "300" >
-
 ### 1.1 General
 - Manufacturing time:
   - 3D printing - 1h
@@ -21,7 +19,6 @@ Here you can find manufacturing and assembly details for a single Pulse Oximeter
   - 4 pcs. M2.5x5mm screws DIN7985 or similar
   - 4 pcs. M3x14mm screws DIN965 or similar
   - 2 pcs. M3x10mm screws DIN965 or similar
-  - 4 pcs. M3x6mm screws DIN7985 or similar
 
 - Drill set:
   - 2mm drill
@@ -56,21 +53,12 @@ Case:
 
 ## 3 Assembly <a id="ASSEMBLY"></a>
 
-### 3.1 Assembly Overview
- - manufacture all parts
- - first assemble each section separately, then join them together, as shown in the assembly brief
-
-### 3.2 Assembly Details
-
 **Finger clip**
 
 Collect the necessary parts: 3D printed parts, soldered finger clip kit
 
-<img src="https://user-images.githubusercontent.com/14543226/31542108-0d6c389e-b011-11e7-92fb-b08a54904dde.jpg" alt="step2b" width= "300" >
-
 | DESCRIPTION | STEP |
 |------|------|
-
 
 
 **Case**
