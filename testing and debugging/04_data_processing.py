@@ -65,8 +65,9 @@ def load_dataset(filename):
     b_n_red = data['butt_norm_red']/100000
     b_n_ir = data['butt_norm_ir']/100000
     ratio = data['ratio']/100
+    ambient = data['ambient']
     raw_red = data['raw_red']
-    return time, raw_ir, dc_ir, mean_ir, butt_ir, dc_red, raw_orange, raw_yellow, norm_red, norm_ir, b_n_red, b_n_ir, ratio, raw_red
+    return time, raw_ir, dc_ir, mean_ir, butt_ir, dc_red, raw_orange, raw_yellow, norm_red, norm_ir, b_n_red, b_n_ir, ratio, ambient, raw_red
         
     
 def butter_lowpass(cut, fs, order=2):
@@ -134,7 +135,7 @@ filename = 'MyPulseoxData.txt'        # insert the filename of the file where yo
 
 # here, time, raw_ir, dc_ir, dc_red and raw_red data are collected. Should you wish to inspect any other set of data,
 # replace the respective "_" with the variable name found in 'load_dataset' function.
-time, raw_ir, dc_ir, _, _, dc_red, _, _, _, _, _, _, _, raw_red = load_dataset(filename)
+time, raw_ir, dc_ir, _, _, dc_red, _, _, _, _, _, _, _, _, raw_red = load_dataset(filename)
 
 dc_ir_ftd = butter_lowpass_filter(dc_ir, 3.3, 100, order=1)
 peaks = trough_decection(dc_ir_ftd, treshold=0)
