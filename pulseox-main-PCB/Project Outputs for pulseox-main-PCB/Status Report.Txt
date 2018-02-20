@@ -1,13 +1,14 @@
-Output: NC Drill Files
-Type  : NC Drill
-From  : PCB Document [pulseox-main-PCB.PcbDoc]
-   Generated File[pulseox-main-PCB.TXT]
-   Generated File[pulseox-main-PCB.DRL]
-   Generated File[pulseox-main-PCB.LDP]
-   Generated File[pulseox-main-PCB.DRR]
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 1:27:52 PM On 08/15/2017
+
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [pulseox-main-PCB.PrjPcb]
+   Generated File[Bill of Materials-pulseox-main-PCB.xlsx]
 
 
-Files Generated   : 4
+Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 6:58:26 PM On 08/08/2017
+Finished Output Generation At 1:28:11 PM On 08/15/2017
