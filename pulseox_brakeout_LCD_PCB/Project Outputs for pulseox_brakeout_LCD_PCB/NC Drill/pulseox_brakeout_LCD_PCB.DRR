@@ -1,0 +1,16 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: pulseox_brakeout_LCD_PCB.PcbDoc   02/23/2018  3:50:14 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : pulseox_brakeout_LCD_PCB.TXT
+EIA File   : pulseox_brakeout_LCD_PCB.DRL
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      35mil (0.9mm)                                             Round             10        PTH        1.58inch (40.23mm)
+T2      126mil (3.2mm)                                            Round             4         NPTH       4.95inch (125.70mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              14
+
+Total Processing Time (hh:mm:ss) : 00:00:00

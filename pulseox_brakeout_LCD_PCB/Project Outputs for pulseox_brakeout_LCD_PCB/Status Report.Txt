@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [pulseox_brakeout_LCD_PCB.PcbDoc]
+   Generated File[pulseox_brakeout_LCD_PCB.TXT]
+   Generated File[pulseox_brakeout_LCD_PCB.DRL]
+   Generated File[pulseox_brakeout_LCD_PCB.LDP]
+   Generated File[pulseox_brakeout_LCD_PCB.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 3:50:14 PM On 02/23/2018

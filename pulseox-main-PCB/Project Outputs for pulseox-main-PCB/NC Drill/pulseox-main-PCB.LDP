@@ -1,2 +1,3 @@
 Layer Pairs Export File for PCB: C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox-main-PCB\pulseox-main-PCB.PcbDoc
-LayersSetName=Top_Bot_Thru_Holes|DrillFile=pulseox-main-pcb.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=pulseox-main-pcb-roundholes.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=pulseox-main-pcb-slotholes.txt|DrillLayers=gtl,gbl

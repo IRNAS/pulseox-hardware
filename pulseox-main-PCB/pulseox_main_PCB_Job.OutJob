@@ -17,11 +17,11 @@ RevisionNamingSchemeGUID=
 [OutputGroup1]
 Name=pulseox_main_PCB_Job.OutJob
 Description=
-TargetOutputMedium=PDF
+TargetOutputMedium=Folder Structure
 VariantName=[No Variations]
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=Virtual Printer
+TargetPrinter=Samsung SCX-4x24 Series PCL6 Class Driver
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -92,7 +92,7 @@ OutputVariantName4=
 OutputEnabled4=0
 OutputEnabled4_OutputMedium1=0
 OutputEnabled4_OutputMedium2=0
-OutputEnabled4_OutputMedium3=1
+OutputEnabled4_OutputMedium3=0
 OutputEnabled4_OutputMedium4=0
 OutputDefault4=0
 Configuration4_Name1=OutputConfigurationParameter1
@@ -105,7 +105,7 @@ OutputVariantName5=
 OutputEnabled5=0
 OutputEnabled5_OutputMedium1=0
 OutputEnabled5_OutputMedium2=0
-OutputEnabled5_OutputMedium3=2
+OutputEnabled5_OutputMedium3=0
 OutputEnabled5_OutputMedium4=0
 OutputDefault5=0
 Configuration5_Name1=OutputConfigurationParameter1
@@ -129,7 +129,7 @@ OutputName7=Assembly Drawings
 OutputCategory7=Assembly
 OutputDocumentPath7=pulseox-main-PCB.PcbDoc
 OutputVariantName7=
-OutputEnabled7=1
+OutputEnabled7=0
 OutputEnabled7_OutputMedium1=0
 OutputEnabled7_OutputMedium2=1
 OutputEnabled7_OutputMedium3=0
@@ -157,6 +157,30 @@ Configuration7_Item9=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full
 Configuration7_Name10=OutputConfigurationParameter10
 Configuration7_Item10=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=KeepOutLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer
 PcbPrintPreferences7=
+OutputType8=BOM_PartType
+OutputName8=Bill of Materials
+OutputCategory8=Report
+OutputDocumentPath8=
+OutputVariantName8=
+OutputEnabled8=1
+OutputEnabled8_OutputMedium1=0
+OutputEnabled8_OutputMedium2=0
+OutputEnabled8_OutputMedium3=1
+OutputEnabled8_OutputMedium4=0
+OutputDefault8=0
+PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration8_Name1=ColumnNameFormat
+Configuration8_Item1=CaptionAsName
+Configuration8_Name2=Filter
+Configuration8_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
+Configuration8_Name3=General
+Configuration8_Item3=OpenExported=False|AddToProject=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=C:\Users\vojislav\Desktop\irnas_templates\BOM\irnas BOM Purchase Live - designator.xlsx|BatchMode=5|FormWidth=1383|FormHeight=956|SupplierProdQty=5|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration8_Name4=GroupOrder
+Configuration8_Item4=LibRef=True
+Configuration8_Name5=SortOrder
+Configuration8_Item5=Manufacturer 1=Down
+Configuration8_Name6=VisibleOrder
+Configuration8_Item6=Description=68|Quantity=51|Supplier 1=60|Supplier Part Number 1=60|Category=47|LibRef=47|Manufacturer 1=62|Manufacturer Part Number 1=45|Supplier Currency 1=45|Supplier Order Qty 1=45|Supplier Stock 1=45|Supplier Subtotal 1=45|Supplier Unit Price 1=53|Footprint=67|Designator=80
 
 [PublishSettings]
 OutputFilePath2=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox-main-PCB\Project Outputs for pulseox-main-PCB\Job1.PDF
@@ -184,6 +208,8 @@ MarkPortsId2=1
 GenerateTOC2=1
 ShowComponentParameters2=1
 GlobalBookmarks2=0
+PDFACompliance2=Disabled
+PDFVersion2=Default
 OutputFilePath3=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox-main-PCB\Project Outputs for pulseox-main-PCB\
 ReleaseManaged3=1
 OutputBasePath3=Project Outputs for pulseox-main-PCB

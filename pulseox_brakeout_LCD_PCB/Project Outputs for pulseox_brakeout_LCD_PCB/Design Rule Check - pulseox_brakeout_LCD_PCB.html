@@ -1,0 +1,378 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD17\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">02/23/2018</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9:49:29 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc" class="file"><acronym title="C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc">C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">14</td></tr>
+</table>
+</td>
+</table><a name="IDY4OYKTWO5YFSI34UFMLP2SIUMA15GJHYE4HIQCJ5JIV00IDBLXJ"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCEUND5VIOG0BGFYSOHENV20GUKECGBLY1N1GYROVWDKJ0GXZTHLI">Clearance Constraint (Gap=0.152mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4XMM5ZZ3BNPXH1OAQVFGJUKISOKLX4HEQSPF52B3EIDULQFGU01I">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDW13DC5YMCSYCIRTZMPOOSAK0Z1SZHIL45HBU3I1Y404AWM0V5IO">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCSJZDQLVNAA5ZV35ZCC4IEW4E2OGAK0OIT3AZHXAUE5GGIV2K4K">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYG1DUT3N4BFMD40EOOGA02XRRBGHNNLIBYRC10L3GZDBHDBRJAMG">Width Constraint (Min=0.254mm) (Max=2mm) (Preferred=0.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNHGPXDQSNE5KMICJCE35YUKJCYLBNUCYYFKGLEEWHWPHCQHVHQB">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLDZE4YOHKJW2LE5DOIDYF343L3YFOIZTWV23KCEVWILVXOSXWJ">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAW2NPBTC1ATFBNMPDA3LO5HENFQ3W2PZ345Z1DIKTUTWQ05FTC2J">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDF2SYLPBKSYV2NM0S0GDGZ2HR4H5QIOFFGQTIQCKHR140CELEEMGH">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDA2QA2GBNDTXXDUSDAO1K35FCJDFRTC4U42LTBAE005CHEN11UKIK">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">6</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTSVSXSEPM2JXFF0ND3VYXXF0ZFMA0X31LT3ZGDHNGZUBNQBZRYGI">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">6</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1HXQTVYBGULXTR1VPZXAP2YPO5E1NXIZSUM5MM3UUX0MOPE5NNK">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDU2GD4SQWRKIZJATO42Z3XPEN4JCTMG3VDJ51O0ENTLJLKP3OFROK">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">14</td>
+</tr>
+</table><br><a name="IDF2SYLPBKSYV2NM0S0GDGZ2HR4H5QIOFFGQTIQCKHR140CELEEMGH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4253.096mil|Location2.X=4264.346mil|Location1.Y=3224.155mil|Location2.Y=3235.405mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4253.096mil|Location2.X=4264.346mil|Location1.Y=3224.155mil|Location2.Y=3235.405mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.172mm &lt; 0.254mm) Between Pad CON1-30(107.834mm,82.688mm) on Top Layer And Pad CON1-31(109.509mm,80.888mm) on Top Layer [Top Solder] Mask Sliver [0.172mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3655.655mil|Location2.X=3666.905mil|Location1.Y=3224.155mil|Location2.Y=3235.405mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3655.655mil|Location2.X=3666.905mil|Location1.Y=3224.155mil|Location2.Y=3235.405mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.172mm &lt; 0.254mm) Between Pad CON1-1(93.334mm,82.688mm) on Top Layer And Pad CON1-31(91.659mm,80.888mm) on Top Layer [Top Solder] Mask Sliver [0.172mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDA2QA2GBNDTXXDUSDAO1K35FCJDFRTC4U42LTBAE005CHEN11UKIK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.489mil|Location2.X=4364.739mil|Location1.Y=3117.918mil|Location2.Y=3129.168mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4353.489mil|Location2.X=4364.739mil|Location1.Y=3117.918mil|Location2.Y=3129.168mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.254mm) Between Track (110.834mm,78.838mm)(110.834mm,82.913mm) on Top Overlay And Pad CON1-31(109.509mm,80.888mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3555.261mil|Location2.X=3566.511mil|Location1.Y=3117.918mil|Location2.Y=3129.168mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3555.261mil|Location2.X=3566.511mil|Location1.Y=3117.918mil|Location2.Y=3129.168mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.254mm) Between Track (90.334mm,78.838mm)(90.334mm,82.913mm) on Top Overlay And Pad CON1-31(91.659mm,80.888mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4249.158mil|Location2.X=4260.408mil|Location1.Y=3271.461mil|Location2.Y=3282.711mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4249.158mil|Location2.X=4260.408mil|Location1.Y=3271.461mil|Location2.Y=3282.711mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.175mm &lt; 0.254mm) Between Track (108.209mm,82.913mm)(108.209mm,83.538mm) on Top Overlay And Pad CON1-30(107.834mm,82.688mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.175mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4249.158mil|Location2.X=4260.408mil|Location1.Y=3258.666mil|Location2.Y=3269.916mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4249.158mil|Location2.X=4260.408mil|Location1.Y=3258.666mil|Location2.Y=3269.916mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.175mm &lt; 0.254mm) Between Track (108.209mm,82.913mm)(110.834mm,82.913mm) on Top Overlay And Pad CON1-30(107.834mm,82.688mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.175mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.591mil|Location2.X=3670.841mil|Location1.Y=3271.461mil|Location2.Y=3282.711mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.591mil|Location2.X=3670.841mil|Location1.Y=3271.461mil|Location2.Y=3282.711mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.175mm &lt; 0.254mm) Between Track (92.959mm,82.913mm)(92.959mm,83.538mm) on Top Overlay And Pad CON1-1(93.334mm,82.688mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.175mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.591mil|Location2.X=3670.841mil|Location1.Y=3258.666mil|Location2.Y=3269.916mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3659.591mil|Location2.X=3670.841mil|Location1.Y=3258.666mil|Location2.Y=3269.916mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.175mm &lt; 0.254mm) Between Track (90.334mm,82.913mm)(92.959mm,82.913mm) on Top Overlay And Pad CON1-1(93.334mm,82.688mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.175mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDTSVSXSEPM2JXFF0ND3VYXXF0ZFMA0X31LT3ZGDHNGZUBNQBZRYGI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4590.118mil|Location2.X=4601.368mil|Location1.Y=3647.126mil|Location2.Y=3658.376mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4590.118mil|Location2.X=4601.368mil|Location1.Y=3647.126mil|Location2.Y=3658.376mil|Absolute=True">Silk To Silk Clearance Constraint: (0.168mm &lt; 0.254mm) Between Text "C9" (116.332mm,91.821mm) on Top Overlay And Track (113.538mm,92.964mm)(117.094mm,92.964mm) on Top Overlay Silk Text to Silk Clearance [0.168mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4490.118mil|Location2.X=4501.368mil|Location1.Y=3647.126mil|Location2.Y=3658.376mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4490.118mil|Location2.X=4501.368mil|Location1.Y=3647.126mil|Location2.Y=3658.376mil|Absolute=True">Silk To Silk Clearance Constraint: (0.168mm &lt; 0.254mm) Between Text "C1" (113.792mm,91.821mm) on Top Overlay And Track (113.538mm,92.964mm)(117.094mm,92.964mm) on Top Overlay Silk Text to Silk Clearance [0.168mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4607.961mil|Location2.X=4620.504mil|Location1.Y=3647.177mil|Location2.Y=3658.427mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4607.961mil|Location2.X=4620.504mil|Location1.Y=3647.177mil|Location2.Y=3658.427mil|Absolute=True">Silk To Silk Clearance Constraint: (0.209mm &lt; 0.254mm) Between Text "C9" (116.332mm,91.821mm) on Top Overlay And Track (117.094mm,92.964mm)(117.094mm,94.996mm) on Top Overlay Silk Text to Silk Clearance [0.209mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4236.356mil|Location2.X=4247.606mil|Location1.Y=3894.207mil|Location2.Y=3908.249mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4236.356mil|Location2.X=4247.606mil|Location1.Y=3894.207mil|Location2.Y=3908.249mil|Absolute=True">Silk To Silk Clearance Constraint: (0.229mm &lt; 0.254mm) Between Text "SCL" (105.41mm,99.06mm) on Top Overlay And Text "SDA" (107.95mm,99.06mm) on Top Overlay Silk Text to Silk Clearance [0.229mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4023.485mil|Location2.X=4034.735mil|Location1.Y=3609.69mil|Location2.Y=3623.249mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4023.485mil|Location2.X=4034.735mil|Location1.Y=3609.69mil|Location2.Y=3623.249mil|Absolute=True">Silk To Silk Clearance Constraint: (0.178mm &lt; 0.254mm) Between Text "C11" (100.457mm,91.821mm) on Top Overlay And Text "C12" (102.489mm,91.821mm) on Top Overlay Silk Text to Silk Clearance [0.178mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4113.732mil|Location2.X=4124.982mil|Location1.Y=3635.613mil|Location2.Y=3646.863mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vojislav\Documents\Projects\pulseox-hardware\pulseox_brakeout_LCD_PCB\pulseox_brakeout_LCD_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4113.732mil|Location2.X=4124.982mil|Location1.Y=3635.613mil|Location2.Y=3646.863mil|Absolute=True">Silk To Silk Clearance Constraint: (0.137mm &lt; 0.254mm) Between Text "C10" (104.775mm,91.821mm) on Top Overlay And Text "C12" (102.489mm,91.821mm) on Top Overlay Silk Text to Silk Clearance [0.137mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

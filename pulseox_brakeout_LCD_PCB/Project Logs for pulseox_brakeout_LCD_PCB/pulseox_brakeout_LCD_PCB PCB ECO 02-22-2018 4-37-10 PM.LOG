@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=+3V Pin=P1-1
+Removed Pin From Net: NetName=GND Pin=P1-2
+Removed Pin From Net: NetName=PA5/SCK Pin=P1-3
+Removed Pin From Net: NetName=PA6/MISO Pin=P1-4
+Removed Pin From Net: NetName=PA7/MOSI Pin=P1-5
+Removed Pin From Net: NetName=PA9/SCL Pin=P1-6
+Removed Pin From Net: NetName=PA10/SDA Pin=P1-7
+Removed Pin From Net: NetName=B_LIGHT Pin=P1-8
+Removed Pin From Net: NetName=GND Pin=P1-9
+Removed Pin From Net: NetName=+3V Pin=P1-10
+Change Component Footprint: Designator=P1 Old Footprint=HDR1X10 New Footprint=HDR1X8
+Change Component Comment : Designator=P1 Old Comment=Header 10 New Comment=Header 8
+Added Pin To Net: NetName=PA5/SCK Pin=P1-1
+Added Pin To Net: NetName=PA6/MISO Pin=P1-2
+Added Pin To Net: NetName=PA7/MOSI Pin=P1-3
+Added Pin To Net: NetName=PA9/SCL Pin=P1-4
+Added Pin To Net: NetName=PA10/SDA Pin=P1-5
+Added Pin To Net: NetName=B_LIGHT Pin=P1-6
+Added Pin To Net: NetName=GND Pin=P1-7
+Added Pin To Net: NetName=+3V Pin=P1-8
