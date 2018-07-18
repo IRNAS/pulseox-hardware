@@ -1,0 +1,55 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model FH12-30S-0.5SH(55)
+#/250979/55899/2.28/30/4/Connector
+DEF FH12-30S-0.5SH(55) J 0 30 Y Y 1 F N
+F0 "J" 750 300 50 H V L CNN
+F1 "FH12-30S-0.5SH(55)" 750 200 50 H V L CNN
+F2 "FH12-30S-0.5SH(55)" 750 100 50 H I L CNN
+F3 "https://www.hirose.com/product/en/download_file/key_name/FH12-30S-0.5SH%2855%29/category/Drawing%20(2D)/doc_file_id/75611/?file_category_id=6&item_id=05860525155&is_series=" 750 0 50 H I L CNN
+F4 "FFC,0.5mm Pitch,Bottom Contact, 30 way Hirose FH12 Series 0.5mm Pitch 30 Way Right Angle SMT Female FPC Connector, ZIF Bottom Contact" 750 -100 50 H I L CNN "Description"
+F5 "" 750 -200 50 H I L CNN "Height"
+F6 "Hirose" 750 -300 50 H I L CNN "Manufacturer_Name"
+F7 "FH12-30S-0.5SH(55)" 750 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "6882814" 750 -500 50 H I L CNN "RS Part Number"
+F9 "http://uk.rs-online.com/web/p/products/6882814" 750 -600 50 H I L CNN "RS Price/Stock"
+F10 "R1050716" 750 -700 50 H I L CNN "Allied_Number"
+F11 "https://www.alliedelec.com/hirose-electric-fh12-30s-0-5sh-55-/R1050716/" 750 -800 50 H I L CNN "Allied Price/Stock"
+F12 "FH12-30S-0.5SH(55)" 750 -900 50 H I L CNN "Arrow Part Number"
+F13 "https://www.arrow.com/en/products/fh12-30s-0.5sh-55/hirose-electric" 750 -1000 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 B
+X 3 3 0 -100 200 R 50 50 0 0 B
+X 5 5 0 -200 200 R 50 50 0 0 B
+X 7 7 0 -300 200 R 50 50 0 0 B
+X 9 9 0 -400 200 R 50 50 0 0 B
+X 11 11 0 -500 200 R 50 50 0 0 B
+X 13 13 0 -600 200 R 50 50 0 0 B
+X 15 15 0 -700 200 R 50 50 0 0 B
+X 17 17 0 -800 200 R 50 50 0 0 B
+X 19 19 0 -900 200 R 50 50 0 0 B
+X 21 21 0 -1000 200 R 50 50 0 0 B
+X 23 23 0 -1100 200 R 50 50 0 0 B
+X 25 25 0 -1200 200 R 50 50 0 0 B
+X 27 27 0 -1300 200 R 50 50 0 0 B
+X 29 29 0 -1400 200 R 50 50 0 0 B
+X 2 2 900 0 200 L 50 50 0 0 B
+X 4 4 900 -100 200 L 50 50 0 0 B
+X 6 6 900 -200 200 L 50 50 0 0 B
+X 8 8 900 -300 200 L 50 50 0 0 B
+X 10 10 900 -400 200 L 50 50 0 0 B
+X 12 12 900 -500 200 L 50 50 0 0 B
+X 14 14 900 -600 200 L 50 50 0 0 B
+X 16 16 900 -700 200 L 50 50 0 0 B
+X 18 18 900 -800 200 L 50 50 0 0 B
+X 20 20 900 -900 200 L 50 50 0 0 B
+X 22 22 900 -1000 200 L 50 50 0 0 B
+X 24 24 900 -1100 200 L 50 50 0 0 B
+X 26 26 900 -1200 200 L 50 50 0 0 B
+X 28 28 900 -1300 200 L 50 50 0 0 B
+X 30 30 900 -1400 200 L 50 50 0 0 B
+P 5 0 1 6 200 100 700 100 700 -1500 200 -1500 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
