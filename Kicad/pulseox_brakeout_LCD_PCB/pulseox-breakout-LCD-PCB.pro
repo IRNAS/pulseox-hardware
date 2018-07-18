@@ -1,4 +1,4 @@
-update=среда, 18. јул 2018. 09:58:17 CEST
+update=среда, 18. јул 2018. 12:00:17 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -152,3 +152,13 @@ LibName120=allegro
 LibName121=actel
 LibName122=ac-dc
 LibName123=74xgxx
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

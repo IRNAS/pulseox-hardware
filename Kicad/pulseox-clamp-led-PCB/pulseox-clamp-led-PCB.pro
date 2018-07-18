@@ -1,4 +1,4 @@
-update=уторак, 17. јул 2018. 10:44:39 CEST
+update=среда, 18. јул 2018. 11:56:49 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -243,3 +243,13 @@ LibName211=/home/sg/Development/KicadFiles/kicad-symbols/74xx
 LibName212=/home/sg/Development/KicadFiles/kicad-symbols/74xGxx
 LibName213=/home/sg/Development/KicadFiles/kicad-symbols/4xxx_IEEE
 LibName214=/home/sg/Development/KicadFiles/kicad-symbols/4xxx
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

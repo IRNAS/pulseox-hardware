@@ -1,4 +1,4 @@
-update=понедељак, 16. јул 2018. 11:26:37 CEST
+update=среда, 18. јул 2018. 11:40:15 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -152,3 +152,13 @@ LibName120=/home/sg/Development/KicadFiles/SparkFun-KiCad-Libraries-master/Libra
 LibName121=/home/sg/Development/KicadFiles/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-Boards
 LibName122=/home/sg/Development/KicadFiles/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-Batteries
 LibName123=/home/sg/Development/KicadFiles/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-Aesthetics
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
